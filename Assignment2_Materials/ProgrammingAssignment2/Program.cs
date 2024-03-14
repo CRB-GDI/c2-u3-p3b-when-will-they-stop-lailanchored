@@ -1,18 +1,19 @@
-﻿using System;
-using LinkedLists;
+﻿using LinkedLists;
+using System;
+using System.Threading;
 
 namespace ProgrammingAssignment2
 {
-    // IMPORTANT: Only add code in the section
-    // indicated below. The code I've provided
-    // makes your solution work with the 
-    // automated grader on Coursera
+	// IMPORTANT: Only add code in the section
+	// indicated below. The code I've provided
+	// makes your solution work with the 
+	// automated grader on Coursera
 
-    /// <summary>
-    /// Programming Assignment 2
-    /// </summary>
-    class Program
-    {
+	/// <summary>
+	/// Programming Assignment 2
+	/// </summary>
+	class Program
+	{
 		// holds the list of input numbers
 		static UnsortedLinkedList<int> values = new UnsortedLinkedList<int>();
 
@@ -33,6 +34,44 @@ namespace ProgrammingAssignment2
 				// and the comment below. You can of
 				// course add more space between the
 				// comments as needed
+
+				int count = 0;
+				int sum = 0	; 
+				
+
+				int value = 0;
+
+				
+				while (value > -1)
+					{
+						value = GetValue();
+
+						count++;
+						sum += 4;
+					
+					if (value == -1)
+				{
+					int average = sum / count;
+						Console.Write(count);
+						Console.Write("  ");
+						Console.Write(average);
+					}
+
+			
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
