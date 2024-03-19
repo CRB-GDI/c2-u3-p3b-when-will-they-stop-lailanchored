@@ -40,27 +40,31 @@ namespace ProgrammingAssignment2
 				
 
 				int value = 0;
-
-				
+				float average = 0;
+				//checks if value and is greater than -1 and progresses the while loop
 				while (value > -1)
 					{
 						value = GetValue();
 
 						count++;
-						sum += 4;
-					
-					if (value == -1)
+						sum = sum + value;
+				//when the value is not -1 and getting the average	
+		              if (value  != -1)
 				{
-					int average = sum / count;
-						Console.Write(count);
-						Console.Write("  ");
-						Console.Write(average);
+					 average = (float)sum / (float)count; 
+						 
+						 	
 					}
-
+					
+					
 			
 				}
-
-
+				//
+				count--;
+Console.Write(count );
+						Console.Write("  ");
+						Console.Write(average );
+					Console.WriteLine();
 
 
 
@@ -78,6 +82,7 @@ namespace ProgrammingAssignment2
 				// Don't add or modify any code below
 				// this comment
 				input = Console.ReadLine();
+			
 			}
 		}
 
