@@ -1,18 +1,19 @@
-﻿using System;
-using LinkedLists;
+﻿using LinkedLists;
+using System;
+using System.Threading;
 
 namespace ProgrammingAssignment2
 {
-    // IMPORTANT: Only add code in the section
-    // indicated below. The code I've provided
-    // makes your solution work with the 
-    // automated grader on Coursera
+	// IMPORTANT: Only add code in the section
+	// indicated below. The code I've provided
+	// makes your solution work with the 
+	// automated grader on Coursera
 
-    /// <summary>
-    /// Programming Assignment 2
-    /// </summary>
-    class Program
-    {
+	/// <summary>
+	/// Programming Assignment 2
+	/// </summary>
+	class Program
+	{
 		// holds the list of input numbers
 		static UnsortedLinkedList<int> values = new UnsortedLinkedList<int>();
 
@@ -34,13 +35,58 @@ namespace ProgrammingAssignment2
 				// course add more space between the
 				// comments as needed
 
+				int count = 0;
+				int sum = 0	; 
+				
+
+				int value = 0;
+				float average = 0;
+				//checks if value is not -1 and then progresses through while loop when it is not
+				while (value != -1 )
+					{
+						value = GetValue();
+
+						
+						
+				//when the value is not -1 program starts adding to the count as well as adding the current value to the sum
+		              if (value  != -1)
+				{
+						count++; 
+					 
+						 sum = sum + value;
+							
+					}
+					
+					
+				}
+				//end of while and if loop calculates average and writes the count + average
+				;
+				average = (float)sum / (float)count;
+			
+Console.Write(count );
+						Console.Write("  ");
+						Console.Write(average );
+					Console.WriteLine();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 				// Don't add or modify any code below
 				// this comment
 				input = Console.ReadLine();
+			
 			}
-		}
+		 }
 
 		/// <summary>
 		/// Builds a linked list of input values from provided string
